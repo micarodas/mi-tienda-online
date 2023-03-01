@@ -1,12 +1,12 @@
-import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 function CartWidget() {
+
   return (
-    <div className="cart-widget">
-      <i className="fas fa-shopping-cart"></i>
-      <span className="badge badge-danger">5</span>
-    </div>
+    <Link to="/cart">
+      <span className="material-icons">shopping_cart</span>
+      <span>0</span>
+    </Link>
   );
 }
 
